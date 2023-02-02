@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Natur'atlas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Natur'atlas</h1>
+    <nav>
+      <ul>
+        <li><a href="#safran">Safran</a></li>
+        <li><a href="#huile-de-nigelle">Huile de Nigelle</a></li>
+        <li><a href="#miel">Miel</a></li>
+        <li><a href="#gelee-royale">Gelée Royale</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="safran">
+      <h2>Safran</h2>
+      <p>Notre safran est cultivé de manière écologique et récolté à la main pour garantir la meilleure qualité.</p>
+      <ul>
+        <li>Prix : 15€/gramme</li>
+        <li>Emballage : Boîte en métal de 1 gramme</li>
+      </ul>
+      <form action="achat.php" method="post">
+        <label for="quantite">Quantité :</label>
+        <input type="number" id="quantite" name="quantite" min="1" max="100" value="1">
+        <input type="hidden" name="produit" value="safran">
+        <input type="submit" value="Ajouter au panier">
+      </form>
+    </section>
+    <section id="huile-de-nigelle">
+      <h2>Huile de Nigelle</h2>
+      <p>Notre huile de Nigelle est pressée à froid pour conserver tous ses bienfaits.</p>
+      <ul>
+        <li>Prix : 20€/50ml</li>
+        <li>Emballage : Flacon en verre de 50ml</li>
+      </ul>
+      <form action="achat.php" method="post">
+        <label for="quantite">Quantité :</label>
+        <input type="number" id="quantite" name="quantite" min="1" max="10" value="1">
+        <input type="hidden" name="produit" value="huile-de-nigelle">
+        <input type="submit" value="Ajouter au panier">
+      </form>
+    </section>
+    <section id="miel">
+      <h2>Miel</h2>
+      <p>Notre miel est produit par des abeilles élevées en pleine nature et récolté à la main.</p>
+      <ul>
+        <li>P
